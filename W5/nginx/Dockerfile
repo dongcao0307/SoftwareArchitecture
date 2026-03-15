@@ -1,2 +1,6 @@
-FROM nginx
+FROM node:18
+WORKDIR /app
+COPY server.js ./
+EXPOSE 3000
+CMD ["node", "server.js"]
 COPY index.html /usr/share/nginx/html/index.html
