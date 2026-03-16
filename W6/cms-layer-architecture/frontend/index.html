@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS Layer Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="tag">Layered CMS</p>
+        <h1>Content Service + SEO Plugin + Audit Log Plugin</h1>
+        <p class="subtitle">Kiến trúc phân lớp: Presentation, Business, Persistence kèm extension plugin cho SEO và Audit.</p>
+      </header>
+
+      <section class="composer">
+        <input id="title" type="text" placeholder="Tiêu đề bài viết" />
+        <input id="author" type="text" placeholder="Tác giả" value="Hậu IT" />
+        <input id="keyword" type="text" placeholder="Từ khóa SEO" value="microkernel" />
+        <textarea id="content" placeholder="Nội dung bài viết"></textarea>
+        <button id="saveBtn">Lưu bài viết</button>
+      </section>
+
+      <p id="status" class="status">Sẵn sàng.</p>
+
+      <section class="grid">
+        <article class="card">
+          <div class="card-head">
+            <h2>Bài viết đã lưu</h2>
+            <button id="refreshPosts">Làm mới</button>
+          </div>
+          <div id="posts" class="list"></div>
+        </article>
+
+        <article class="card">
+          <h2>Báo cáo SEO</h2>
+          <div id="seoReport" class="seo-report empty">Chưa có báo cáo SEO.</div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Audit Logs</h2>
+            <button id="refreshLogs">Làm mới</button>
+          </div>
+          <div id="logs" class="list"></div>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

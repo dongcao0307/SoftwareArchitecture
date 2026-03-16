@@ -1,0 +1,19 @@
+services:
+  backend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./backend-core:/app
+      - ./backend-core/plugins:/app/plugins
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && node server.js"
+
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3001:3000"
+    command: sh -c "npm install && npm start"

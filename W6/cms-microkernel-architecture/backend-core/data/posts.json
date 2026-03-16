@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1773664820855,
+    "title": "Chào ngày mới",
+    "content": "Hello",
+    "author": "Hậu IT",
+    "keyword": "microkernel",
+    "createdAt": "2026-03-16T12:40:20.855Z",
+    "seo": {
+      "keyword": "microkernel",
+      "totalWords": 4,
+      "keywordHits": 0,
+      "density": 0,
+      "recommendation": "Mật độ từ khóa thấp, cân nhắc tăng tự nhiên trong nội dung."
+    }
+  },
+  {
+    "id": 1773664869323,
+    "title": "Microkernel plugin architecture",
+    "content": "Microkernel plugin architecture helps extension points and plugin loading. Plugin extension should be modular and testable.",
+    "author": "Hau IT",
+    "keyword": "plugin",
+    "createdAt": "2026-03-16T12:41:09.323Z",
+    "seo": {
+      "keyword": "plugin",
+      "totalWords": 19,
+      "keywordHits": 4,
+      "density": 21.05,
+      "recommendation": "Mật độ từ khóa cao, cân nhắc giảm để tránh nhồi nhét."
+    }
+  },
+  {
+    "id": 1773666866370,
+    "title": "Hello Kitty",
+    "content": "Chào em!",
+    "author": "DongCao",
+    "keyword": "microkernel",
+    "createdAt": "2026-03-16T13:14:26.370Z",
+    "seo": {
+      "keyword": "microkernel",
+      "totalWords": 4,
+      "keywordHits": 0,
+      "density": 0,
+      "recommendation": "Mật độ từ khóa thấp, cân nhắc tăng tự nhiên trong nội dung."
+    }
+  }
+]
